@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <div class="now-playing">PLAYING x OF y</div>
+        <div class="track-art"></div>
+        <div class="track-info">
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track Artist</div>
+        </div>
+        <div class="controls">
+            <button class="prev-track">&#10094;</button>
+            <button class="playpause-track">&#9654;</button>
+            <button class="next-track">&#10095;</button>
+        </div>
+        <input type="range" class="seek_slider" value="0" max="100">
+        <div class="time">
+            <div class="current-time">00:00</div>
+            <div class="total-duration">00:00</div>
+        </div>
+        <input type="range" class="volume_slider" value="100" max="100">
+        <div class="extra-controls">
+            <button class="shuffle">&#128256;</button>
+            <button class="repeat">&#128257;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
